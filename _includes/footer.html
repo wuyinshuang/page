@@ -1,0 +1,65 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>{{ site.title }}</h3>
+        <p>{{ site.description }}</p>
+        <div class="social-links">
+          {% if site.social_links.github %}
+            <a href="https://github.com/{{ site.social_links.github }}" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          {% endif %}
+          {% if site.social_links.twitter %}
+            <a href="https://twitter.com/{{ site.social_links.twitter }}" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          {% endif %}
+          {% if site.social_links.linkedin %}
+            <a href="https://linkedin.com/in/{{ site.social_links.linkedin }}" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          {% endif %}
+          {% if site.social_links.weibo %}
+            <a href="https://weibo.com/{{ site.social_links.weibo }}" target="_blank" aria-label="微博">
+              <i class="fab fa-weibo"></i>
+            </a>
+          {% endif %}
+          <a href="/feed.xml" target="_blank" aria-label="RSS订阅">
+            <i class="fas fa-rss"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>快速链接</h3>
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">首页</a></li>
+          <li><a href="{{ '/about' | relative_url }}">关于我</a></li>
+          <li><a href="{{ '/archive' | relative_url }}">文章归档</a></li>
+          <li><a href="{{ '/categories' | relative_url }}">分类</a></li>
+          <li><a href="{{ '/tags' | relative_url }}">标签</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>联系方式</h3>
+        <ul>
+          <li><i class="fas fa-envelope"></i> {{ site.email }}</li>
+          <li><i class="fas fa-map-marker-alt"></i> {{ site.author.location }}</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>
+        &copy; {{ site.time | date: '%Y' }} {{ site.title }}. 
+        基于 <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 构建，
+        托管于 <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+        <span id="busuanzi_container_site_pv">
+          总访问量: <span id="busuanzi_value_site_pv">0</span> 次
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>

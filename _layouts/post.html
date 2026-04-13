@@ -1,0 +1,83 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    
+    <div class="post-meta">
+      <div class="post-meta-left">
+        <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">
+          {{ page.date | date: "%Y年%m月%d日" }}
+        </time>
+        
+        {% if page.author %}
+          <span class="post-author">作者: {{ page.author }}</span>
+        {% endif %}
+        
+        {% if page.categories.size > 0 %}
+          <div class="post-categories">
+            分类:
+            {% for category in page.categories %}
+              <a href="{{ '/categories' | relative_url }}#{{ category | slugify }}" class="category">{{ category }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+      
+      {% if page.tags.size > 0 %}
+        <div class="post-tags">
+          标签:
+          {% for tag in page.tags %}
+            <a href="{{ '/tags' | relative_url }}#{{ tag | slugify }}" class="tag">{{ tag }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </header>
+  
+  <div class="post-content">
+    {{ content }}
+  </div>
+  
+  <footer class="post-footer">
+    <!-- 上一篇/下一篇导航 -->
+    <div class="post-navigation">
+      {% if page.previous %}
+        <a href="{{ page.previous.url | relative_url }}" class="post-nav-prev">
+          ← {{ page.previous.title | truncate: 30 }}
+        </a>
+      {% endif %}
+      
+      {% if page.next %}
+        <a href="{{ page.next.url | relative_url }}" class="post-nav-next">
+          {{ page.next.title | truncate: 30 }} →
+        </a>
+      {% endif %}
+    </div>
+    
+    <!-- 相关文章 -->
+    {% if site.related_posts.size > 0 %}
+      <div class="related-posts">
+        <h3>相关文章</h3>
+        <ul>
+          {% for post in site.related_posts limit: 3 %}
+            <li>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <span class="related-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+    
+    <!-- 评论区域 -->
+    {% if page.comments %}
+      <div id="comments" class="comments">
+        <h3>评论</h3>
+        {% include comments.html %}
+      </div>
+    {% endif %}
+  </footer>
+</article>
