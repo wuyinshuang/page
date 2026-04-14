@@ -14,8 +14,6 @@ permalink: /about/
 
 <div class="personal-info">
 
-&#x20; <h2>吴银双的技术博客</h2>
-
 &#x20; <ul>
 
 &#x20;   <li>姓名：吴银双</li>
