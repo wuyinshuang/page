@@ -3,8 +3,8 @@ title: ""
 name: "吴银双"
 email: "wys199811@163.com"
 description: "软件工程师 | 技术分享 | 学习记录"
-baseurl: ""  
-url: "https://wuyinshuang.github.io/page"  # 替换为你的域名
+baseurl: "/page"  
+url: "https://wuyinshuang.github.io"  # 替换为你的域名
 github_username: wuyinshuang  # 替换为你的GitHub用户名
 
 # 构建设置

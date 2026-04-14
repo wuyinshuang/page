@@ -6,12 +6,12 @@
 
 // 减小页面顶部空白
 .page-content {
-  padding-top: 10px; // 原可能是 50px，调小
+  padding-top: 1px; // 原可能是 50px，调小
 }
 
 // 减小文章/页面的标题上方空白
 .page-heading, .post-title {
-  margin-top: 10px; // 原可能是 30px，调小
+  margin-top: 1px; // 原可能是 30px，调小
 }
 
 // 减小个人信息区域的上方空白
@@ -20,7 +20,7 @@
 }
 
 .post-list {
-  margin-top: 20px; // 缩小文章列表与标题的间距
+  margin-top: 10px; // 缩小文章列表与标题的间距
 }
 
 /* 隐藏整个header区域 */
