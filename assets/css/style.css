@@ -37,54 +37,68 @@
 
 /* 关于我 区域 用卡片样式 */
 .about-me {
-  background-color: #fff;
-  border: 1px solid #eee;
+  background-color: #f9f9f9;
   border-radius: 8px;
-  padding: 15px;
-  max-width: 300px;        /* 限制宽度，避免过宽 */
-  margin: 0 auto 15px;     /* 水平居中 + 底部间距 */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 轻微阴影 */
+  padding: 12px 16px; /* 减少内边距 */
+  margin-top: 16px;   /* 减少与上方内容的间距 */
+  font-size: 14px;    /* 缩小字体 */
 }
 
+/* 标题 */
 .about-me h3 {
-  font-size: 18px;
+  font-size: 16px;
+  margin: 0 0 8px 0; /* 减少底部间距 */
   color: #333;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #eee; /* 标题下加分割线 */
-  padding-bottom: 5px;
 }
 
-.about-me ul {
-  list-style: none;         /* 去掉列表默认圆点 */
+/* 联系列表 */
+.about-list {
+  list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 8px 0; /* 减少底部间距 */
+  display: flex;      /* 横向排列（可选，也可垂直） */
+  gap: 16px;          /* 列表项之间的间距 */
+  flex-wrap: wrap;    /* 小屏幕自动换行 */
 }
 
-.about-me li {
-  margin: 5px 0;            /* 列表项上下间距 */
+/* 联系项 */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* 图标与文字的间距 */
 }
 
-.about-me a {
-  color: #0066cc;           /* 链接颜色 */
-  text-decoration: none;    /* 去掉下划线 */
-}
-
-.about-me a:hover {
-  text-decoration: underline; /*  hover 时显示下划线 */
-}
-
-/* 版权信息 */
-.copyright {
+/* 图标 */
+.about-me .icon {
   font-size: 14px;
   color: #666;
 }
 
+/* 链接 */
+.about-me .link {
+  color: #2a7ae2;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.about-me .link:hover {
+  color: #1a5fb4;
+  text-decoration: underline;
+}
+
+/* 统计访问量 */
 .busuanzi-stats {
-  margin-top: 10px;
-  font-size: 14px;
+  margin: 0;
   color: #666;
-  text-align: center; /* 如果需要居中 */
+  line-height: 1.4; /* 减少行高 */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px; /* 各部分之间的间距 */
 }
+
+
+
 
 .busuanzi-stats span {
   margin: 0 5px;
