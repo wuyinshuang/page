@@ -6,7 +6,7 @@
 
 // 减小页面顶部空白
 .page-content {
-  padding-top: 20px; // 原可能是 50px，调小
+  padding-top: 10px; // 原可能是 50px，调小
 }
 
 // 减小文章/页面的标题上方空白
@@ -17,4 +17,64 @@
 // 减小个人信息区域的上方空白
 .personal-info {
   margin-top: 10px; // 新增，调整个人信息块的顶部间距
+}
+
+.post-list {
+  margin-top: 20px; // 缩小文章列表与标题的间距
+}
+
+/* 隐藏整个header区域 */
+.site-header {
+  display: none;
+}
+
+/* 页脚整体样式 */
+.site-footer {
+  background-color: #f9f9f9; /* 浅灰色背景，区分内容 */
+  padding: 20px 0;          /* 上下内边距 */
+  text-align: center;       /* 整体内容居中 */
+}
+
+/* 关于我 区域 用卡片样式 */
+.about-me {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 300px;        /* 限制宽度，避免过宽 */
+  margin: 0 auto 15px;     /* 水平居中 + 底部间距 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 轻微阴影 */
+}
+
+.about-me h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee; /* 标题下加分割线 */
+  padding-bottom: 5px;
+}
+
+.about-me ul {
+  list-style: none;         /* 去掉列表默认圆点 */
+  padding: 0;
+  margin: 0;
+}
+
+.about-me li {
+  margin: 5px 0;            /* 列表项上下间距 */
+}
+
+.about-me a {
+  color: #0066cc;           /* 链接颜色 */
+  text-decoration: none;    /* 去掉下划线 */
+}
+
+.about-me a:hover {
+  text-decoration: underline; /*  hover 时显示下划线 */
+}
+
+/* 版权信息 */
+.copyright {
+  font-size: 14px;
+  color: #666;
 }
