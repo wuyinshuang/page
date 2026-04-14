@@ -1,8 +1,14 @@
 ---
 layout: home
+pagination:  # 开启分页（与 _config.yml 中的 paginate 配合）
+  enabled: true
+  collection: posts
+  permalink: /page:num/
+  per_page: 5  # 与 _config.yml 中的 paginate 保持一致
+  sort_field: date
+  sort_reverse: true
 title: 首页
 permalink: /
 ---
 
-<!-- 可选：添加 RSS 订阅链接（Minima 会自动生成 /feed.xml） -->
-<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | relative_url }}">
+

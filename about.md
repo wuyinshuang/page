@@ -22,6 +22,12 @@ permalink: /about/
 
 
 
+\## 订阅博客
+
+\[RSS Feed](/feed.xml)
+
+
+
 \## 📫 联系我
 
 
