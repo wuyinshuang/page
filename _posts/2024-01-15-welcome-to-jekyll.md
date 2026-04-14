@@ -2,9 +2,10 @@
 layout: post
 title: "欢迎来到我的技术博客"
 date: 2024-01-15
-categories: [随笔, 建站]
+categories: [测试]
 tags: [Jekyll, GitHub Pages, 博客]
 author: 吴银双
+permalink: /测试/2024/01/15/welcome-to-jekyll/
 ---
 
 ## 你好，世界！ 👋

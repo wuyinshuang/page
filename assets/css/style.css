@@ -1,0 +1,20 @@
+---
+# 必须保留这行，告诉 Jekyll 编译 SCSS
+---
+
+@import "minima"; // 导入 Minima 主题的默认样式
+
+// 减小页面顶部空白
+.page-content {
+  padding-top: 20px; // 原可能是 50px，调小
+}
+
+// 减小文章/页面的标题上方空白
+.page-heading, .post-title {
+  margin-top: 10px; // 原可能是 30px，调小
+}
+
+// 减小个人信息区域的上方空白
+.personal-info {
+  margin-top: 10px; // 新增，调整个人信息块的顶部间距
+}
