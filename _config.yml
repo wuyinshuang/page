@@ -3,7 +3,7 @@ title: "吴银双的技术博客"
 name: "吴银双"
 email: "wys199811@163.com"
 description: "软件工程师 | 技术分享 | 学习记录"
-baseurl: ""  # 子目录路径，如果放在子目录需要设置
+baseurl: ""  
 url: "https://wuyinshuang.github.io"  # 替换为你的域名
 github_username: wuyinshuang  # 替换为你的GitHub用户名
 
@@ -31,13 +31,6 @@ author:
   location: "南京，中国"
   avatar: "/assets/images/avatar.jpg"
 
-# 评论系统 (可选的，需要时启用)
-comments:
-  enabled: false
-  provider: "disqus"  # 或 "utterances", "giscus"
-  disqus_shortname: ""
-
-
 # 排除文件
 exclude:
   - Gemfile
@@ -57,7 +50,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true
+      comments: false  # 文章默认关闭评论
   - scope:
       path: ""
       type: "pages"
@@ -67,3 +60,12 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+# 评论系统（禁用）
+comments:
+  enabled: false
+  provider: ""
+  disqus_shortname: ""
+
+
+
