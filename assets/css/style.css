@@ -78,3 +78,14 @@
   font-size: 14px;
   color: #666;
 }
+
+.busuanzi-stats {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  text-align: center; /* 如果需要居中 */
+}
+
+.busuanzi-stats span {
+  margin: 0 5px;
+}

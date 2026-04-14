@@ -5,7 +5,6 @@ date: 2024-01-15
 categories: [测试]
 tags: [Jekyll, GitHub Pages, 博客]
 author: 吴银双
-permalink: /测试/2024/01/15/welcome-to-jekyll/
 ---
 
 ## 你好，世界！ 👋
@@ -17,6 +16,3 @@ permalink: /测试/2024/01/15/welcome-to-jekyll/
 - 记录技术学习心得
 - 分享开发经验
 
-...
-
-<!-- 其他内容 -->
