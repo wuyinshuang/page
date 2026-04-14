@@ -4,7 +4,7 @@ name: "吴银双"
 email: "wys199811@163.com"
 description: "软件工程师 | 技术分享 | 学习记录"
 baseurl: ""  
-url: "https://wuyinshuang.github.io"  # 替换为你的域名
+url: "https://wuyinshuang.github.io/page/"  # 替换为你的域名
 github_username: wuyinshuang  # 替换为你的GitHub用户名
 
 # 构建设置
@@ -28,8 +28,6 @@ social_links:
 author:
   name: "吴银双"
   bio: "软件工程师，热衷于学习和技术分享"
-  location: "南京，中国"
-  avatar: "/assets/images/avatar.jpg"
 
 # 排除文件
 exclude:
@@ -47,15 +45,15 @@ include:
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      layout: post
       comments: false  # 文章默认关闭评论
   - scope:
       path: ""
-      type: "pages"
+      type: pages
     values:
-      layout: "page"
+      layout: page
   - scope:
       path: ""
     values:
